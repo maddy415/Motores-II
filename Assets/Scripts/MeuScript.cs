@@ -45,6 +45,14 @@ public class MeuScript : MonoBehaviour
             
             n3++;
         }
+
+        for (int i = 0; i <= 100; i++) //3.1
+        {
+            if (i % 2 == 0)
+            {
+                Debug.Log($"{i} é par");
+            }
+        }
         
         personagens.Add("Solanum"); //pos 0
         personagens.Add("Feldspar"); //pos 1
