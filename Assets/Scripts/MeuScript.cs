@@ -1,13 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-/*
- * 5- Crie uma classe Celular, defina seus atributos,
- * crie o construtor e em seguida crie um objeto com a classe celular e mostre as informações dele no Console.
 
- */
 public class MeuScript : MonoBehaviour
 {
+    public int n1 = 7;
+
+    public int n2 = 10;
+
+    public int maior;
+
+    public int n3 = 1;
+    
     public List<string> personagens = new List<string>();
 
     Celular samsung;
@@ -19,6 +23,29 @@ public class MeuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log("Hello, World!"); //1
+
+        if (n1 > n2) //2
+        {
+            maior = n1;
+            Debug.Log($"{maior} é maior que {n1}.");
+        }
+        else
+        {
+            maior = n2;
+            Debug.Log($"{maior} é maior que {n1}");
+        }
+
+        while (n3 <= 100) //3
+        {
+            if (n3 % 2 != 0)
+            {
+                Debug.Log($"{n3} é ímpar");
+            }
+            
+            n3++;
+        }
+        
         personagens.Add("Solanum"); //pos 0
         personagens.Add("Feldspar"); //pos 1
         personagens.Add("Gossan"); //pos 2
